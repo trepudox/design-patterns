@@ -14,6 +14,12 @@ public class App {
 
         System.out.println(marco);
         System.out.println(marco2);
+
+        System.out.println("------------------------------------");
+
+        PessoaBuilder pessoaBuilder = new PessoaBuilder().nome("default").idade(999);
+        System.out.println(pessoaBuilder.build());
+        System.out.println(pessoaBuilder.altura(1).build());
     }
 
 }
